@@ -23,6 +23,18 @@
         animation: floatAround 20s linear infinite;
         white-space: nowrap;
     }
+    .title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+    .ascii-art {
+    font-size: 1.1rem;
+    white-space: pre;
+    line-height: 1.2;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
 
     @keyframes floatAround {
         0% {
@@ -41,16 +53,18 @@
             transform: translate(50vw, 50vh);
         }
     }
+    
 </style>
 </head>
 <body>
 
-    <pre class="ascii-art">
+<div class="floating-text">Happy Birthday, Pizda Lubimaya 🌻❤️
+<pre class="ascii-art">
    (\_/)
    ( •_•)
   / >🎂
 </pre>
-<div class="floating-text">Happy Birthday, Pizda Lubimaya 🌻❤️</div>
+</div>
 
 </body>
 </html>
