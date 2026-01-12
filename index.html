@@ -37,21 +37,24 @@
     }
 
     @keyframes floatAround {
-        0% {
-            transform: translate(50vw, 50vh);
-        }
-        25% {
-            transform: translate(10vw, 20vh);
-        }
-        50% {
-            transform: translate(70vw, 30vh);
-        }
-        75% {
-            transform: translate(30vw, 80vh);
-        }
-        100% {
-            transform: translate(50vw, 50vh);
-        }
+    0% {
+        transform: translate(-50%, -50%) translate(0vw, 0vh);
+    }
+    20% {
+        transform: translate(-50%, -50%) translate(70vw, 10vh);
+    }
+    40% {
+        transform: translate(-50%, -50%) translate(20vw, 80vh);
+    }
+    60% {
+        transform: translate(-50%, -50%) translate(80vw, 60vh);
+    }
+    80% {
+        transform: translate(-50%, -50%) translate(10vw, 30vh);
+    }
+    100% {
+        transform: translate(-50%, -50%) translate(50vw, 50vh);
+    }
     }
     
 </style>
