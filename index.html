@@ -60,8 +60,20 @@
 </style>
 </head>
 <body>
+<audio id="bgm" src="Happy_Birthday_Habibi.mp3" autoplay muted loop></audio>
 
-<audio src="Happy_Birthday_Habibi.mp3" autoplay loop></audio>
+<script>
+window.addEventListener('load', () => {
+    const audio = document.getElementById('bgm');
+    audio.muted = false;  // unmute right after autoplay starts
+    audio.play().catch(() => {
+        // Autoplay still blocked -> wait for first tap
+        document.body.addEventListener('click', () => {
+            audio.play();
+        }, { once: true });
+    });
+});
+</script>
 <div class="floating-text">Happy Birthday 🥳!
 <pre class="ascii-art">                                                                     
                                                       
